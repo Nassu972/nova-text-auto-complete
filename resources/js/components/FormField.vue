@@ -2,6 +2,7 @@
     <default-field :field="field" :errors="errors">
         <template slot="field">
             <text-auto-complete
+                :id="field.attribute"
                 @input="performSearch"
                 @selected="selectItem"
                 :error="hasError"

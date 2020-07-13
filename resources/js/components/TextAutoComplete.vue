@@ -4,6 +4,7 @@
     >
         <div class="relative">
             <input
+                :id="this.id"
                 :value="value"
                 @input="handleInput"
                 ref="search"
@@ -56,6 +57,7 @@ export default {
     mixins: [clickaway],
     inheritAttrs: false,
     props: {
+        id: 'textAutoComplete',
         value: '',
         data: [],
         error: {
